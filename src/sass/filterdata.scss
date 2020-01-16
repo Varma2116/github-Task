@@ -1,0 +1,97 @@
+.respositories{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    border-bottom: 0.7px solid #8e9399;
+    .resp-details{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: #586069;
+        .resp-name{
+            color: #0266d6;
+            font-weight: 600;
+            font-size: 22px;
+            @media(min-width: 0px) and(max-width: 498px){
+                font-size:17px
+            }
+        }
+        .description{
+            margin-top: 10px;
+            @media(min-width: 0px) and (max-width: 498px){
+                word-wrap: break-word;
+                width:200px
+            }
+        }
+        .details{
+            margin-top:18px;
+            display: flex;
+            width:370px;
+            justify-content: space-between;
+            .language{
+                display: flex;
+                .dot{
+                    height: 15px;
+                    width: 15px;
+                    background-color: red;
+                    border-radius: 50%; 
+                    margin-right: 3px;
+                }
+            }
+            .forks{
+                display: flex;
+                .fork{
+                    width:16px;
+                    height: 20px;
+                    background-image: url('../svg/code-fork.svg');
+                }
+                div{
+                    margin-left: 6px;
+                }
+                @media(min-width: 0px) and(max-width: 500px){
+                    display: none;
+                }
+            }
+            .date{
+                display: flex;
+                div{
+                    padding-right: 10px;
+                }
+            }
+            @media(min-width: 0px) and (max-width: 498px){
+                margin-left: 0px;
+                width:280px;
+            }
+        }
+        @media(min-width: 0px) and(max-width: 500px){
+            margin-left: 10px;
+            width: 70%;
+        }
+    }
+    .star-button{
+       display: flex;
+       width: 60px;
+       height: 30px; 
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+       cursor: pointer;
+       background-color: #f0f4f7;
+       color: #5c6165;
+       margin-top: 30px;
+       margin-right: 40px;
+       padding-left: 5px;
+       div{
+            color: black;
+       }
+    }
+    @media(min-width: 0px) and(max-width: 500px){
+        margin-left: 20px;
+        width: 100%;
+    }
+    @media(min-width: 500px){
+        justify-content: space-between;
+    }
+}

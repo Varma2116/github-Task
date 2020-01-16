@@ -1,0 +1,132 @@
+.sidebar{
+    color: #5b5f62;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7px;
+    margin-top: 5px;
+    .profile-top{
+        position: fixed;
+        display: none;
+        top:0px;
+        left:10px;
+        background-color: #ffffff;
+        z-index: 1000;
+        width: 260px;
+        height: 50px;
+        border-bottom: 1px solid gray;
+        &.show{
+            display: flex;
+        }
+        img{
+            width: 35px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        div{
+            margin-left:10px;
+            margin-top: 15px;
+        }
+        .follow-button{
+            height: 30px; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-left:10px;
+            margin-top: 10px;
+            display: none;
+            &.view{
+                display: block;
+            }
+        }
+        @media (min-width:0px)and(max-width:767px) {
+            width: 90%;
+        }
+    }
+    .topdata{
+        width: 90%;
+        margin-left: 10px;
+        display: flex;
+        position: sticky;
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 15px;
+                border-radius: 6px;
+                @media (min-width:0px)and (max-width:760px){
+                    width:15vw;
+                    height:13vh;
+               }
+            }
+
+        .profile-data{
+            .name{
+                margin-top: 5px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .profile{
+                margin-top: 3px;
+                font-size: 18px;
+                color: grey;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .follow button{
+                margin-top: 12px;
+                width: 250px;
+                padding: 6px;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                position: sticky;
+                top:0px;
+                @media (min-width:0px) and (max-width:767px){
+                    width:50vw;
+                }
+            }
+            @media(min-width: 0px) and (max-width:760px){
+                display: flex;
+                flex-direction: column;
+                margin-left:40px;
+                margin-top: 10px;
+            }
+        }
+        @media (min-width:768px){
+            display: block;
+        }
+    }
+    .description{
+        color: #24292e;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 15px;
+        .details{
+            display: flex;
+            margin-top: 10px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            div{
+                padding-left: 5px;
+                text-decoration: none;
+            }
+        }
+        .block{
+            margin-top: 25px;
+            font-size: 15px;
+        }
+        @media (min-width:0px)and (max-width:720px){
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    }
+    @media (min-width:0px) and (max-width:720px){
+        margin: unset;
+    }
+}
